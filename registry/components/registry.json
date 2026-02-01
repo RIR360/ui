@@ -1,0 +1,17 @@
+{
+  "name": "@rir360/ui",
+  "description": "A collection of reusable UI elements",
+  "version": "1.0.0",
+  "components": {
+    "splide": {
+      "name": "splide",
+      "description": "A Splide carousel wrapper with auto-scroll optimized for Next.js",
+      "files": ["splide.tsx"],
+      "dependencies": [
+        "@splidejs/react-splide@^0.7.12",
+        "@splidejs/splide-extension-auto-scroll@^0.5.3"
+      ],
+      "registryDependencies": []
+    }
+  }
+}
