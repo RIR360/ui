@@ -7,6 +7,7 @@
       "name": "splide",
       "description": "A Splide carousel wrapper with auto-scroll optimized for Next.js",
       "files": ["splide.tsx"],
+      "import": "import Carousel from '@/components/rir360/splide';",
       "dependencies": [
         "@splidejs/react-splide@^0.7.12",
         "@splidejs/splide-extension-auto-scroll@^0.5.3"
