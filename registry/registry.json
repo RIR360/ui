@@ -13,6 +13,70 @@
         "@splidejs/splide-extension-auto-scroll@^0.5.3"
       ],
       "registryDependencies": []
+    },
+    "section": {
+      "name": "section",
+      "description": "A base layout wrapper with configurable max-width, padding, and semantic tag",
+      "files": ["section.tsx"],
+      "import": "import Section",
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    "header": {
+      "name": "header",
+      "description": "Sticky header with logo, navigation, CTA button, optional banner, and mobile drawer",
+      "files": ["header.tsx"],
+      "import": "import Header",
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    "hero": {
+      "name": "hero",
+      "description": "Hero section with title, description, CTA button, and optional image",
+      "files": ["hero.tsx"],
+      "import": "import Hero",
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    "editorial": {
+      "name": "editorial",
+      "description": "Two-column section with reversible image and text layout",
+      "files": ["editorial.tsx"],
+      "import": "import Editorial",
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    "grid": {
+      "name": "grid",
+      "description": "Responsive grid layout with configurable columns (1-6)",
+      "files": ["grid.tsx"],
+      "import": "import Grid",
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    "card": {
+      "name": "card",
+      "description": "Basic card with image, title, description, and CTA",
+      "files": ["card.tsx"],
+      "import": "import Card",
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    "contact-form": {
+      "name": "contact-form",
+      "description": "Contact form with name, email, message fields and async submit handler",
+      "files": ["contact-form.tsx"],
+      "import": "import ContactForm",
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    "footer": {
+      "name": "footer",
+      "description": "Footer with logo, navigation links, social links, and copyright",
+      "files": ["footer.tsx"],
+      "import": "import Footer",
+      "dependencies": [],
+      "registryDependencies": []
     }
   }
 }
