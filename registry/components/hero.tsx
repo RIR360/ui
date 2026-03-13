@@ -80,7 +80,7 @@ const Hero = forwardRef<HTMLDivElement, HeroProps>(
               {description && (
                 <p
                   className={`text-lg mb-8 max-w-xl ${
-                    fullBackground ? (contentPosition === 'center' ? 'mx-auto' : '') : 'text-gray-600 mx-auto lg:mx-0'
+                    fullBackground ? (contentPosition === 'center' ? 'mx-auto' : '') : 'text-current/60 mx-auto lg:mx-0'
                   }`}
                 >
                   {description}

@@ -61,7 +61,7 @@ const Editorial = forwardRef<HTMLDivElement, EditorialProps>(
               {title}
             </h2>
             {description && (
-              <p className="text-gray-600 mb-6 text-lg/relaxed leading-relaxed">{description}</p>
+              <p className="text-current/60 mb-6 text-lg/relaxed leading-relaxed">{description}</p>
             )}
             {children}
             {cta && (

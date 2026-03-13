@@ -27,7 +27,7 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
       <>
         <header
           ref={ref}
-          className={`sticky top-0 z-50 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 border-b border-gray-200 ${className}`}
+          className={`sticky top-0 z-50 bg-white/95 backdrop-blur supports-backdrop-filter:bg-white/80 border-b border-gray-200 ${className}`}
           {...props}
         >
         {/* Optional banner */}
@@ -40,7 +40,7 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               {logo || <span className="text-xl font-bold">Logo</span>}
             </div>
 
@@ -50,7 +50,7 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+                  className="text-sm font-medium text-current/60 hover:text-current transition-colors"
                 >
                   {link.label}
                 </a>
@@ -84,7 +84,7 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
 
         {/* Mobile drawer (Off-canvas) */}
         <div 
-          className={`fixed inset-0 z-[10000] md:hidden transition-opacity duration-300 ${menuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+          className={`fixed inset-0 z-10000 md:hidden transition-opacity duration-300 ${menuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
         >
           {/* Backdrop */}
           <div 
@@ -98,7 +98,7 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
           >
             <div className="flex flex-col min-h-full">
               <div className="flex items-center justify-between p-4 border-b">
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   {logo || <span className="text-xl font-bold">Logo</span>}
                 </div>
                 <button

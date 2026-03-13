@@ -34,7 +34,7 @@ const ContactForm = forwardRef<HTMLFormElement, ContactFormProps>(
     };
 
     const inputClass =
-      'w-full rounded-md border border-gray-300 px-4 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors';
+      'w-full rounded-md border border-gray-300 px-4 py-2.5 text-sm placeholder:text-current/50 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors';
 
     return (
       <form
@@ -44,7 +44,7 @@ const ContactForm = forwardRef<HTMLFormElement, ContactFormProps>(
         {...props}
       >
         <div>
-          <label htmlFor="contact-name" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="contact-name" className="block text-sm font-medium mb-1">
             Name
           </label>
           <input
@@ -59,7 +59,7 @@ const ContactForm = forwardRef<HTMLFormElement, ContactFormProps>(
         </div>
 
         <div>
-          <label htmlFor="contact-email" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="contact-email" className="block text-sm font-medium mb-1">
             Email
           </label>
           <input
@@ -74,7 +74,7 @@ const ContactForm = forwardRef<HTMLFormElement, ContactFormProps>(
         </div>
 
         <div>
-          <label htmlFor="contact-message" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="contact-message" className="block text-sm font-medium mb-1">
             Message
           </label>
           <textarea

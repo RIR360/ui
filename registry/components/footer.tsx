@@ -52,11 +52,11 @@ const Footer = forwardRef<HTMLElement, FooterProps>(
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-12">
             {/* Brand Section */}
             <div className="col-span-2 lg:col-span-2">
-              <div className="flex-shrink-0 mb-6">
+              <div className="shrink-0 mb-6">
                 {logo || <span className="text-2xl font-bold">Logo</span>}
               </div>
               {description && (
-                <p className="text-gray-600 text-sm max-w-xs mb-6 leading-relaxed">
+                <p className="text-current/60 text-sm max-w-xs mb-6 leading-relaxed">
                   {description}
                 </p>
               )}
@@ -70,7 +70,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(
                       aria-label={link.label}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-gray-900 transition-colors"
+                      className="text-current/50 hover:text-current transition-colors"
                     >
                       {link.icon}
                     </Link>
@@ -82,7 +82,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(
             {/* Quick Links Sections */}
             {quickLinks.map((section) => (
               <div key={section.title} className="col-span-1">
-                <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-4">
                   {section.title}
                 </h3>
                 <ul className="space-y-3">
@@ -90,7 +90,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(
                     <li key={link.label}>
                       <Link
                         href={link.href}
-                        className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                        className="text-sm text-current/60 hover:text-current transition-colors"
                       >
                         {link.label}
                       </Link>
@@ -103,7 +103,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(
 
           {/* Bottom Bar */}
           <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-xs text-gray-500 order-2 md:order-1">{copyright}</p>
+            <p className="text-xs text-current/50 order-2 md:order-1">{copyright}</p>
             
             {bottomLinks.length > 0 && (
               <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 order-1 md:order-2">
@@ -111,7 +111,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(
                   <Link
                     key={link.label}
                     href={link.href}
-                    className="text-xs text-gray-500 hover:text-gray-900 transition-colors"
+                    className="text-xs text-current/50 hover:text-current transition-colors"
                   >
                     {link.label}
                   </Link>

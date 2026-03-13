@@ -9,6 +9,7 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
     alt: string;
     width?: number;
     height?: number;
+    className?: string;
   };
   title?: string;
   description?: string;
@@ -32,15 +33,15 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
           <Image
             src={image.src}
             alt={image.alt}
-            width={image.width}
-            height={image.height}
-            className="w-full h-48 object-cover"
+            width={image.width || 500}
+            height={image.height || 500}
+            className={image.className || 'w-full object-contain'}
           />
         )}
 
         <div className="p-5">
           {title && <h3 className="text-lg font-semibold mb-2">{title}</h3>}
-          {description && <p className="text-gray-600 text-sm mb-4">{description}</p>}
+          {description && <p className="text-current/60 text-sm mb-4">{description}</p>}
           {children}
           {cta && (
             <a
